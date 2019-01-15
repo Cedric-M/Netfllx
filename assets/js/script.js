@@ -1,17 +1,37 @@
-    function openNav() {
-       document.getElementById("mySidenav").style.display = "block";
-       document.getElementById("box1").style.top = "400px";
-       document.getElementById("box1").style.border = "1px solid #fff";
-       document.getElementById("box1").style.transform = "scale(1)";
-       document.getElementById("row").style.height = "800px";
+var movieData = {
+   count: 3,
+   movies: [{
+       id: 1,
+       title: "Movie A",
+       thumb: "http://placehold.it/280x150"
+     },
+     {
+       id: 2,
+       title: "Movie B",
+       thumb: "http://placehold.it/280x150"
+     },
+     {
+       id: 3,
+       title: "Movie C",
+       thumb: "http://placehold.it/280x150"
+     },
+   ]
+ };
+ 
+ $(document).ready(function() {
+   console.log("ït works");
 
-       // document.getElementById("box1").style.display = "block";
+      if (typeof movieData === 'object' && typeof movieData !== null) {
+      // List the movies
+      for (var i in movieData.movies) {
+         var movie = movieData.movies[i];
+         var movieDiv = '<div class="movie-item" data-id="' + movie.id + '">' +
+            '<img src="' + movie.thumb + '"><br>' +
+            '<p>' + movie.title + '</p>' +
+            '</div>';
+         $('#movies').append(movieDiv);
+      }
+      }
 
-    }
 
-    function closeNav() {
-       document.getElementById("mySidenav").style.display = "none";
-       document.getElementById("box1").style.transform = "scale(1)";
-       document.getElementById("box1").style.transition = "all 0.7s ease";
-       document.getElementById("box1").style.border = "none";
-    }
+ });

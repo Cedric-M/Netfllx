@@ -1,0 +1,16 @@
+.movie-item {
+    display: inline-block;
+    border: 2px solid #DDD;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .movie-item:hover {
+    border: 2px solid #00aaca;
+    cursor: pointer;
+  }
+  
+  .movie-item p {
+    color: #00aaca;
+    font-weight: bold;
+  }
