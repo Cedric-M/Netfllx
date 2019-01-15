@@ -31,20 +31,6 @@ h1 {
 	margin-left: 15px;
 }
 
-.image:hover {
-	-webkit-transform: scale(1.35);
-	transform: scale(1.35);
-	opacity: .9;
-}
-
-.image {
-	-webkit-transition: all 0.7s ease;
-	transition: all 0.7s ease;
-	padding: 15px;
-	margin: auto;
-}
-
-
 /*#example1:hover {
 		   opacity: .1;
 		}*/

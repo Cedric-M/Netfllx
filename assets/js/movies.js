@@ -19,16 +19,23 @@ var movieData = {
  };
  
  $(document).ready(function() {
-   console.log("ït works");
 
       if (typeof movieData === 'object' && typeof movieData !== null) {
       // List the movies
       for (var i in movieData.movies) {
          var movie = movieData.movies[i];
-         var movieDiv = '<div class="movie-item" data-id="' + movie.id + '">' +
-            '<img src="' + movie.thumb + '"><br>' +
-            '<p>' + movie.title + '</p>' +
-            '</div>';
+         var movieDiv = 
+         
+         '<li class="movie-item" data-id="' + movie.id + '">' +
+            '<a href="#">' +
+               '<img src="' + movie.thumb + '" width="280" height="150" />' +
+               '<span class="text-content"><i class="fa fa-chevron-up" aria-hidden="true"></i><br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br>' + movie.title + '</span></span>' +
+            '</a>' +
+         '</li>';
+
+
+
+
          $('#movies').append(movieDiv);
       }
       }
