@@ -7,13 +7,13 @@ var movieData = {
      },
      {
        id: 2,
-       title: "Movie B",
-       thumb: "http://placehold.it/280x150"
+       title: "The Ballad of Buster Scruggs",
+       thumb: "assets/img/buster-scruggs.jpg"
      },
      {
        id: 3,
-       title: "Movie C",
-       thumb: "http://placehold.it/280x150"
+       title: "",
+       thumb: "assets/img/roma.jpg"
      },
    ]
  };
@@ -33,7 +33,7 @@ var movieData = {
             '</a>' +
          '</li>';
 
-         $('#movies').append(movieDiv);
+         $('#films').append(movieDiv);
       }
     }
 
