@@ -2,8 +2,8 @@ var movieData = {
    count: 3,
    movies: [{
        id: 1,
-       title: "Movie A",
-       thumb: "http://placehold.it/280x150"
+       title: "",
+       thumb: "assets/img/birdbox.jpg"
      },
      {
        id: 2,
@@ -20,7 +20,7 @@ var movieData = {
  
  $(document).ready(function() {
 
-      if (typeof movieData === 'object' && typeof movieData !== null) {
+    if (typeof movieData === 'object' && typeof movieData !== null) {
       // List the movies
       for (var i in movieData.movies) {
          var movie = movieData.movies[i];
@@ -33,12 +33,8 @@ var movieData = {
             '</a>' +
          '</li>';
 
-
-
-
          $('#movies').append(movieDiv);
       }
-      }
-
+    }
 
  });
