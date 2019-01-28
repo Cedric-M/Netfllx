@@ -1,5 +1,5 @@
 var movieData = {
-   count: 3,
+   count: 6,
    movies: [{
        id: 1,
        title: "",
@@ -15,6 +15,21 @@ var movieData = {
        title: "",
        thumb: "assets/img/roma.jpg"
      },
+     {
+      id: 4,
+      title: "Lorem Ipsum",
+      thumb: "assets/img/placehold.png"
+    },
+    {
+      id: 5,
+      title: "Lorem Ipsum",
+      thumb: "assets/img/placehold.png"
+    },
+    {
+      id: 6,
+      title: "Lorem Ipsum",
+      thumb: "assets/img/placehold.png"
+    },
    ]
  };
  
